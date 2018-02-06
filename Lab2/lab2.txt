@@ -1,0 +1,52 @@
+1. echo "Hello - First Line" > myFile
+
+2. echo "Line 1" >> myFile
+echo "Line 2" >> myFile
+echo "Line 3" >> myFile
+echo "Line 4" >> myFile
+echo "Line 5" >> myFile
+
+3. who >> myFile
+who am i >> myFile
+date >> myFile
+
+4. a) chmod a+r myFile
+
+b) chmod ug+rw myFile
+chmod o-rwx myFile
+
+c)chmod u+w myFile
+chmod go-w myFile
+
+d)chmod ug+x myFile
+chmod u+rw myFile
+chmod go-rw myFile
+
+5. a) chmod a+r myStuff
+
+b) chmod gu+rw myStuff
+chmod o-rwx myStuff
+
+c)chmod go-w myStuff
+
+d)chmod ug+x myStuff
+chmod u+rw myStuff
+chmod go-rw myStuff
+
+6) a) cat *ing.txt
+
+b) cat *[Xx]*.txt
+
+c) cat *[o]*.txt // ls *o* | xargs cat
+
+d) cat *'ack'*.txt
+
+e) cat *'ack'*.txt > all3.txt
+
+7) a) grep -i 'alex' phone_book.txt
+
+b) grep '905' phone_book.txt | wc -l
+
+c) grep 'babysitter' phone_book.txt
+
+d) grep 'friend'|'friend2' phone_book.txt | wc -l
